@@ -1,6 +1,6 @@
 package se.iths;
 
-public class Run {
+public class Runner {
 private double distance;
 private double time;
 private int date;
