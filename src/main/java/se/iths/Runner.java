@@ -1,11 +1,15 @@
 package se.iths;
 
 public class Runner {
-private double distance;
-private double time;
-private int date;
-private String id;
+    double heightincm;
+    double weightinkg;
 
-
-
+    public Runner(double heightincm, double weightinkg) {
+        this.heightincm = heightincm;
+        this.weightinkg = weightinkg;
+    }
+    public double calculateBmi() {
+        double heightInMeter = heightincm/100.0;
+        return weightinkg / (heightInMeter*heightInMeter);
+    }
 }
